@@ -11,6 +11,7 @@ class MeaningListViewModel extends ChangeNotifier{
 
   Future<void> getMeanings(String word)async{
     status=Status.loading;
+    notifyListeners();
     List<String> meanings=await dictionaryService.searchWord(word);
     meaningViewModel=MeaningViewModel(word: word, meanings: meanings);
     status=meanings.isNotEmpty
