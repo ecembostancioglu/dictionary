@@ -23,4 +23,3 @@ class DictionaryService{
     throw Exception('Bad Request');
     }
   }
-}
