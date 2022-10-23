@@ -1,23 +1,24 @@
 class Words{
-  List<MeansList>? meansList;
+  List<MeansList>? anlamlarListe;
 
-  Words({required this.meansList});
+  Words({required this.anlamlarListe});
 
   Words.fromJson(Map<String,dynamic> json){
-    if(json['meansList'] != null){
-      meansList=[];
-      json['meansList'].forEach((a)=>meansList!.add(MeansList.fromJson(a)));
+    if(json['anlamlarListe'] != null){
+      anlamlarListe=<MeansList>[];
+      json['anlamlarListe'].forEach((a)
+      =>anlamlarListe!.add(MeansList.fromJson(a)));
     }
   }
 }
 
 class MeansList{
-  String? mean;
+  String? anlam;
 
-  MeansList({required this.mean});
+  MeansList({required this.anlam});
 
   MeansList.fromJson(Map<String,dynamic>json){
-    mean=json['anlam'];
+    anlam=json['anlam'];
   }
 
 }

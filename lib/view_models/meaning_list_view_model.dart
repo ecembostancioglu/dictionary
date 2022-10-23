@@ -7,14 +7,15 @@ enum Status{initial, loading, notFound, success}
 class MeaningListViewModel extends ChangeNotifier{
   MeaningViewModel meaningViewModel=MeaningViewModel(word: '', meanings: []);
   DictionaryService dictionaryService=DictionaryService();
-  Status status=Status.initial;
 
+  List<String>? meanings;
+  Status status=Status.initial;
   Future<void> getMeanings(String word)async{
     status=Status.loading;
     notifyListeners();
-    List<String> meanings=await dictionaryService.searchWord(word);
-    meaningViewModel=MeaningViewModel(word: word, meanings: meanings);
-    status=meanings.isNotEmpty
+    meanings=await dictionaryService.searchWord(word);
+    meaningViewModel=MeaningViewModel(word: word, meanings: meanings!);
+    status=meanings!.isNotEmpty
         ? Status.success
         : Status.notFound;
     notifyListeners();
