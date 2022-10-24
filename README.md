@@ -1,16 +1,11 @@
-# dictionary
+#  Dictionary App
+Dictionary application using MVVM
 
-A new Flutter project.
+# API Endpoints Used
+https://sozluk.gov.tr/
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+##  Libraries which I used in the application:
+- http : https://pub.dev/packages/http
+- provider : https://pub.dev/packages/provider
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

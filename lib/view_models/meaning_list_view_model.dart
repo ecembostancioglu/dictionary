@@ -2,7 +2,7 @@ import 'package:dictionary/services/dictionary_service.dart';
 import 'package:dictionary/view_models/meaning_view_model.dart';
 import 'package:flutter/material.dart';
 
-enum Status{initial, loading, notFound, success}
+enum Status{initial, loading, notFound, success,delete}
 
 class MeaningListViewModel extends ChangeNotifier{
   MeaningViewModel meaningViewModel=MeaningViewModel(word: '', meanings: []);

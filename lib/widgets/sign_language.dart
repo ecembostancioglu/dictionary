@@ -33,7 +33,7 @@ class SignLanguage extends StatelessWidget {
                            shape: RoundedRectangleBorder(
                                borderRadius: BorderRadius.circular(25)
                            ),
-                           child: Image.network('https://sozluk.gov.tr/assets/img/isaret/${word}.gif')
+                       //    child: Image.network('https://sozluk.gov.tr/assets/img/isaret/${word}.gif')
                         ),
                       ),
                      ),
